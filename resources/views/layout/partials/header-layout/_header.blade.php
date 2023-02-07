@@ -7,10 +7,10 @@
             <a href="/">
                 @php $bodyAttribute = getHtmlAttribute('body', 'data-kt-app-layout') @endphp
                 @if ($bodyAttribute === 'dark-header')
-                    <img alt="Logo" src="{{ image('logos/default-dark.svg') }}" class="h-20px h-lg-30px theme-light-show"/>
+                    <img alt="Logo" src="{{ image('logos/default-dark.png') }}" class="h-20px h-lg-30px theme-light-show"/>
                 @elseif($bodyAttribute === 'light-header')
                     <img alt="Logo" src="{{ image('logos/default.svg') }}" class="theme-light-show h-20px h-lg-30px theme-light-show"/>
-                    <img alt="Logo" src="{{ image('logos/default-dark.svg') }}" class="theme-dark-show h-20px h-lg-30px theme-light-show"/>
+                    <img alt="Logo" src="{{ image('logos/default-dark.png') }}" class="theme-dark-show h-20px h-lg-30px theme-light-show"/>
                 @endif
             </a>
         </div>

@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\ProductsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +18,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [DashboardController::class, 'index'])->middleware(['auth', 'verified']);
 
-Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+Route::get('/category', [CategoriesController::class, 'view'])->name('category');
+Route::get('/category-products', [CategoriesController::class, 'products'])->name('categoryProducts');
+
+Route::get('/products', [ProductsController::class, 'index'])->name('products');
+
+Route::get('/makes', [CarController::class, 'makes'])->name('makes');
+Route::get('/models', [CarController::class, 'models'])->name('makes');
 
 Route::get('/error', function () {
     abort(500);

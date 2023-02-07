@@ -52,7 +52,6 @@
         <!--end::Menu wrapper-->
     </div>
     <!--end::My apps links-->
-    <!--begin::Theme mode-->
     <div class="app-navbar-item ms-1 ms-lg-3">
         @include('partials/theme-mode/_main')
     </div>

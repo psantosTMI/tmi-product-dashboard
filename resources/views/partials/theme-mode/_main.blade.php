@@ -27,4 +27,4 @@
 	<!--end::Svg Icon-->
 </a>
 <!--begin::Menu toggle-->
-@include('partials/theme-mode/__menu')
+@include('partials/theme-mode/__menu')
